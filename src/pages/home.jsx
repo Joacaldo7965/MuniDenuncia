@@ -19,9 +19,8 @@ export const HomePage = () => {
         <button className='alert_button' variant='contained'>Material UI Button</button>
         
       </div>
-      <Selector/>
-      
-      {/*<Info/>*/}
+      {/*<Selector/>*/}
+      <Info/>
     </div>
     
   )

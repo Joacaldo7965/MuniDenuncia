@@ -17,18 +17,45 @@ export const Info = () => {
         {/*<NavBar /> */}
       </div>
       <div className='desplegable-info'>
+        
         <div className='global-info'>
+            <div className='back-icon'>
+                <img className='back' src={arrow} />
+            </div>
             <div className='info-icon'>
                 <img className='imagen-info' src={cuchillo} />
             </div>
+            
             <div className='info-text'>
                 <div>Asalto</div>
             </div>
         </div>
         <div className='barra-separadora'></div>
 
-        <div>
-            <div>Descripción</div>
+        <div className='rellenado'>
+        <div className='espaciado'></div>
+            <div className='descripcion-text'>
+                Descripción
+            </div>
+            <div className='descripcion-fill'>
+                Asaltan a un señor al frente del Negocio. Eran 3 sujetos, al parecer con un cuchillo. Se fueron hacia el norte
+            </div>
+            <div className='espaciado'></div>
+            <div className='descripcion-text'>
+                Ubicación
+            </div>
+
+            <div className='descripcion-fill'>
+                Escanilla 938
+            </div>
+            <div className='espaciado'></div>
+            <div className='espaciado'></div>
+            <div className='espaciado'></div>
+            <div className='confirmar-box'>
+                <div className='confirmar'>
+                    Confirmar
+                </div>
+            </div>
         </div>
 
       </div>
