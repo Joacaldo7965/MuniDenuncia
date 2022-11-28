@@ -39,10 +39,8 @@ export const HomePage = () => {
         <button className='alert_button' onClick={tuqui} variant='contained'>Alerta!</button>
       </div>
       {/* <Selector/> */}
-      {/* <Selector /> */}
-      <Detail />
-
       {/*<Info/>*/}
+      {/* <Detail /> */}
       {/* <Notifications/> */}
 
     </div>
