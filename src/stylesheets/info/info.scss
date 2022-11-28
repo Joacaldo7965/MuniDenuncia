@@ -1,0 +1,46 @@
+.global-info{
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+}
+.info-icon{
+    width: 50%;
+    height: 100%;
+    margin-top: 10%;
+    right: 0;
+}
+.imagen-info{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width:20%;
+    position: absolute;
+    right: 10%;
+
+}
+.barra-separadora{
+    width: 80%;
+    height: 0.3%;
+    margin-left: 10%;
+    background-color: black;
+}
+
+.info-text{
+    width: 40%;
+    margin-right: auto; 
+    margin-left: 10%;
+    margin-top: -30%;
+    font-size: 300%;
+}
+
+.desplegable-info{
+    height: 80%;
+    position: absolute;
+    border-radius: 25px 25px 0px 0px;
+    bottom: 0;
+    left: 0%;
+    width: 102%;
+    margin-bottom: -4%;
+    margin-left: -2%;
+    background-color: rgb(255, 168, 131, 0.7);
+    border: 2px solid rgb(255, 91, 20);
+}
