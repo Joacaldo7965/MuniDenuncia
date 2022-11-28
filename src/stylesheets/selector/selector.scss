@@ -1,14 +1,5 @@
-.selector{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom:80%;
-    
-    background-color: #f0f0f0;
-    padding: 10px;
-}
 .desplegable{
+    visibility: visible; /* TODO: Change visibility automagicly */
     position: absolute;
     border-radius: 25px 25px 0px 0px;
     bottom: 0;
