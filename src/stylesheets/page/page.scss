@@ -17,6 +17,24 @@
   height: 100%;
 }
 
+.red_marker_container{
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  pointer-events: none;
+
+  display: flex;
+}
+
+
+.red_marker{
+  margin: auto;
+}
+
 .alert{
   position: fixed;
   left: 0;
