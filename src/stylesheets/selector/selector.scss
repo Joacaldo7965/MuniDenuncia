@@ -1,0 +1,45 @@
+.selector{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:80%;
+    
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.desplegable{
+    position: absolute;
+    border-radius: 25px 25px 0px 0px;
+    bottom: 0;
+    left: 0%;
+    width: 102%;
+    margin-bottom: -4%;
+    margin-left: -2%;
+    background-color: rgb(255, 168, 131, 0.7);
+    border: 2px solid rgb(255, 91, 20);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 3%;
+    row-gap: 0%;
+    column-gap: 5%;
+    max-height: 80%;
+    place-items: center;  
+    margin-bottom: 5%;
+    
+}
+.grid-item {
+    width: 60%;
+    text-align: center;
+    
+}
+.imagen{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width:90%;
+    height:auto;
+    object-fit: cover;
+}
