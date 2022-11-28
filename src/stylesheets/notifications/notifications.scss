@@ -1,0 +1,28 @@
+.notifications{
+    visibility: visible; /* TODO: Change visibility automagicly */
+    position: absolute;
+    border-radius: 25px 25px 0px 0px;
+    bottom: 0;
+    top: 30%;
+    width: 100%;
+    background-color: rgba(214, 188, 177, 0.9);
+    //border: 2px solid rgb(255, 91, 20);
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(255, 91, 20);
+    
+}
+
+.horizontalLine{
+    height: 1px;
+    background-color: gray;
+    width: 100%;
+}
+
+.notificationContainer{
+    //margin-top: 20px;
+}
+
+.notificationContent{
+    padding: 10px;
+}

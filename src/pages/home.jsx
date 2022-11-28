@@ -9,6 +9,7 @@ import RedMarker from '../assets/red_marker.png'
 
 import Selector from '../components/selector'
 import Info from '../components/info'
+import Notifications from '../components/notifications'
 
 export const HomePage = () => {
 
@@ -36,9 +37,10 @@ export const HomePage = () => {
       <div className='alert'>
         <button className='alert_button' onClick={tuqui} variant='contained'>Alerta!</button>
       </div>
-      <Selector/>
-      
+      {/* <Selector/> */}
       {/*<Info/>*/}
+      {/* <Notifications/> */}
+
     </div>
     
   )

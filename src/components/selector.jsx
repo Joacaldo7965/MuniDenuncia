@@ -10,11 +10,6 @@ import pelea from '../assets/pelea.png'
 export const Selector = () => {
   return (
     <div>
-      <div className='selector'>
-        <h1 className='app_header_title'>Muni Denuncia</h1>
-        <h1 className='app_header_subtitle'>Tu buen vivir</h1> {/* TODO: (IDEA) poner esta letra en cursiva */}
-        {/*<NavBar /> */}
-      </div>
       <div className='desplegable'>
         <h1 className='app_header_title'>¿Que está sucediendo?</h1>
         
@@ -49,7 +44,7 @@ export const Selector = () => {
             <div>Pelea</div>
           </div>
           
-          </div>
+        </div>
       </div>
     </div>
   )
