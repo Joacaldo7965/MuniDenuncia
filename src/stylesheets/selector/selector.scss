@@ -1,36 +1,72 @@
+#selector{
+    visibility: collapse;
+}
 .desplegable{
-    visibility: visible; /* TODO: Change visibility automagicly */
-    position: absolute;
+    //visibility: visible; /* TODO: Change visibility automagicly */
+    /*position: absolute;
     border-radius: 25px 25px 0px 0px;
     bottom: 0;
     left: 0%;
     width: 102%;
     margin-bottom: -4%;
-    margin-left: -2%;
-    background-color: rgb(255, 168, 131, 0.7);
-    border: 2px solid rgb(255, 91, 20);
+    margin-left: -2%;*/
+    //background-color: rgba(238, 224, 218, 0.9);
+    //border: 2px solid rgb(139, 138, 138);
+    background-color: rgba(203, 219, 237, 0.95);
+    border-top: 2px solid rgb(48, 56, 93);
+
+    position: absolute;
+    border-radius: 25px 25px 0px 0px;
+    bottom: 0;
+    top: 30%;
+    width: 100%;
+}
+
+.selector_header{
+    //width: 50%;
+    display: flex;
+}
+
+.selector_back_icon{
+    //max-width:10%;
+    width: 8%;
+    height: 8%;
+    margin-top: 5%;
+    margin-left: 3%;
+    
+}
+.selector_title{
+    font-size: 7vw;
+    margin-left: 5%;
 }
 
 .grid-container {
+    //margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    padding: 3%;
+    //padding: 3%;
     row-gap: 0%;
     column-gap: 5%;
-    max-height: 80%;
     place-items: center;  
-    margin-bottom: 5%;
     
 }
 .grid-item {
     width: 60%;
+    //height: 30%;
     text-align: center;
     
 }
+
+.grid-item .imagen{
+    border-radius: 5px;
+}
+
 .imagen{
     border: 2px solid rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
     max-width:90%;
     height:auto;
+    //width: 30%;
+    //height: 30%;
     object-fit: cover;
 }

@@ -11,11 +11,6 @@ import arrow from '../assets/arrow.png'
 export const Info = () => {
   return (
     <div>
-      <div className='selector'>
-        <h1 className='app_header_title'>Muni Denuncia</h1>
-        <h1 className='app_header_subtitle'>Tu buen vivir</h1> {/* TODO: (IDEA) poner esta letra en cursiva */}
-        {/*<NavBar /> */}
-      </div>
       <div className='desplegable-info'>
         
         <div className='global-info'>

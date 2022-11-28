@@ -22,6 +22,13 @@ export const HomePage = () => {
       elem.style.visibility = "hidden"
     }
   }
+  function alertClick() {
+    //console.log("lol")
+    const elem = document.getElementById("selector")
+    
+    elem.style.visibility = "visible"
+    
+  }
 
   return (
     <div className='page'>
@@ -29,17 +36,19 @@ export const HomePage = () => {
       <div className='map_container'>
         {/* TODO: Insertar un mapa de alguna forma XD */}
         {/*<img className='map' src={MapaTest} alt='mapa de test' /> */}
-        <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63330.70741058432!2d-70.65851803261704!3d-33.46466692735647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scl!4v1669593798206!5m2!1sen!2scl"
-          loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe className='map' frameBorder="0" 
+          src="https://www.bing.com/maps/embed?h=400&w=500&cp=-33.490837767875675~-70.61734914779663&lvl=16&typ=d&sty=h&src=SHELL&FORM=MBEDV8" 
+          scrolling="no">
+     </iframe>
       </div>
       <div id='red_marker_container' className='red_marker_container'>
         <img className='red_marker' src={RedMarker} alt="lmao" />
       </div>
       <div className='alert'>
-        <button className='alert_button' onClick={tuqui} variant='contained'>Alerta!</button>
+        <button className='alert_button' onClick={alertClick} variant='contained'>Alerta!</button>
       </div>
-      {/* <Selector/> */}
-      {/*<Info/>*/}
+      <Selector/>
+      {/* <Info/> */}
       {/* <Detail /> */}
       {/* <Notifications/> */}
 

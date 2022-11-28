@@ -7,39 +7,50 @@ import auto from '../assets/car.png'
 import cono from '../assets/cono.png'
 import pelea from '../assets/pelea.png'
 
+import arrow from '../assets/arrow.png'
+
 export const Selector = () => {
+  function closeSelector(){
+    const elem = document.getElementById("selector")
+    
+    elem.style.visibility = "collapse"
+  }
   return (
-    <div>
+    <div id='selector'>
       <div className='desplegable'>
-        <h1 className='app_header_title'>¿Que está sucediendo?</h1>
+        <div className='selector_header'>
+            <img onClick={closeSelector} className='selector_back_icon' src={arrow} />
+            <h1 className='selector_title'>¿Que está sucediendo?</h1>
+        </div> 
         
-        <div class="grid-container">
-          <div class="grid-item">
+        
+        <div className="grid-container">
+          <div className="grid-item">
             <div><img className='imagen' src={noise} /></div>
             <div>Ruidos</div>
           </div>
 
-          <div class="grid-item">
+          <div className="grid-item">
             <div><img className='imagen' src={cuchillo} /></div>
             <div>Asalto</div>
           </div>
 
-          <div  class="grid-item">
+          <div  className="grid-item">
             <div><img className='imagen' src={llama} /></div>
             <div>Incendio</div>
           </div>
 
-          <div  class="grid-item">
+          <div  className="grid-item">
             <div><img className='imagen' src={auto} /></div>
             <div>Accidente</div>
           </div>
 
-          <div  class="grid-item">
+          <div  className="grid-item">
             <div><img className='imagen' src={cono} /></div>
             <div>Reparacion</div>
           </div>
 
-          <div  class="grid-item">
+          <div  className="grid-item">
             <div><img className='imagen' src={pelea} /></div>
             <div>Pelea</div>
           </div>
