@@ -11,6 +11,16 @@
   bottom: 20%;
 }
 
+.home_alerts_icon{
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  width: 10%;
+  //border: 1px solid black;
+  border-radius: 5px;
+  
+}
+
 .map{
   object-fit: cover;
   width: 100%;
@@ -22,17 +32,21 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  top: 0;
+  top: 20%;
+  bottom: 20%;
 
-  pointer-events: none;
+  //pointer-events: none;
 
   display: flex;
 }
 
 
 .red_marker{
-  margin: auto;
+  width: 10%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
 }
 
 .alert{
@@ -46,8 +60,14 @@
 .alert_button{
   position: fixed;
   bottom: 5%;
-  left: 30%;
-  right: 30%;
+  left: 10%;
+  right: 10%;
   height: 10%;
   font-size: 3vw;
+
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: black;
+  color: azure;
 }

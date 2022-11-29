@@ -1,26 +1,39 @@
-.notifications{
-    visibility: visible; /* TODO: Change visibility automagicly */
+#notifications{
+    visibility: collapse; /* TODO: Change visibility automagicly */
     position: absolute;
     border-radius: 25px 25px 0px 0px;
     bottom: 0;
     top: 30%;
     width: 100%;
-    background-color: rgba(214, 188, 177, 0.9);
-    //border: 2px solid rgb(255, 91, 20);
+    background-color: rgba(214, 188, 177, 0.95);
     border-top: 2px;
     border-top-style: solid;
     border-top-color: rgb(255, 91, 20);
+    background-color: rgba(203, 219, 237, 0.95);
+    border-top: 2px solid rgb(48, 56, 93);
     
+}
+
+.notifications-title-container{
+    display: flex;
+}
+
+.notifications-back-icon{
+    width: 8%;
+    height: 8%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.notifications_title{
+    font-size: 7vw;
+    margin-left: 5%;
 }
 
 .horizontalLine{
     height: 1px;
     background-color: gray;
     width: 100%;
-}
-
-.notificationContainer{
-    //margin-top: 20px;
 }
 
 .notificationContent{

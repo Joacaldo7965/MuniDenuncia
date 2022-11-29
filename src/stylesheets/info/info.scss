@@ -1,54 +1,58 @@
+#info{
+    visibility: collapse;
+}
+
 .global-info{
-    width: 80%;
-    height: 20%;
-    margin-left: 10%;
+    display: flex;
 }
-.info-icon{
-    width: 50%;
-    height: 100%;
-    margin-top: 10%;
-    margin-right: 10%;
-    margin-left: auto;
-    
+
+.info-back-icon{
+    width: 8%;
+    height: 8%;
+    margin-top: 5%;
+    margin-left: 3%;
 }
+
+.info-text{
+    font-size: 10vw;
+    margin-top: auto;
+    margin-left: 5%;
+    margin-bottom: auto;
+    width: 55%;
+    text-align: center;
+}
+
 .imagen-info{
     border: 2px solid rgba(0, 0, 0, 0.8);
-    background-color: rgba(255, 255, 255, 0.9);
-    max-width:45%;
-    display: flex;
-    float: right;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
 
+    width: 18%;
+    height: 18%;
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
-.back-icon{
-    width: 50%;
-    height: fit-content;
-    margin-top: 10%;
-    margin-right: auto;
-    margin-left: 0%;
-}
-.back{
-    max-width:15%;
-    display: flex;
-    float: left;
-}
+
 .barra-separadora{
     width: 80%;
     height: 0.2%;
     margin-left: 10%;
     background-color: rgb(75, 75, 75);
 }
+
 .rellenado{
     height: 70%;
     width: 80%;
     margin-left: 10%;
 }
+
 .descripcion-text{
     height: 8%;
     width: 80%;
     margin-left: 3%;
     font-weight: bold;
 }
+
 .descripcion-fill{
     border-radius: 15px;
     height: auto;
@@ -58,31 +62,39 @@
     padding: 3%;
     border: 1px solid black;
 }
+
+.description-fill-container{
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.description-fill{
+    font-size: small;
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 15px;
+    resize: none;
+    width: 100%;
+    background-color: transparent;
+}
+
 .espaciado{
     width: 100%;
     height: 5%;
 }
-.confirmar{
-    border-radius: 15px;
+
+.confirmar-button{
+    border-radius: 5px;
     height: auto;
-    width: fit-content;
-    text-align: left;
     font-size: larger;
     font-weight: bolder;
     background-color: black;
     color: azure;
-    padding: 3%;
-    border: 2px solid black;
+    //padding: 4%;
+    //border: 2px solid black;
 }
-.info-text{
-    width: 40%;
-    margin-right: auto; 
-    margin-left: 10%;
-    margin-top: -20%;
-    font-size: 300%;
-    
 
-}
 .confirmar-box{
     width: 30%;
     margin-right: 3%;
@@ -91,14 +103,10 @@
 }
 
 .desplegable-info{
-    height: 60%;
     position: absolute;
     border-radius: 25px 25px 0px 0px;
     bottom: 0;
-    left: 0%;
-    width: 102%;
-    margin-bottom: -4%;
-    margin-left: -2%;
-    background-color: rgba(203, 219, 237, 0.9);
-    border: 2px solid rgb(48, 56, 93);
+    top: 30%;
+    background-color: rgba(203, 219, 237, 0.95);
+    border-top: 2px solid rgb(48, 56, 93);
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import NavBar from './nav_bar'
 import noise from '../assets/noise.png'
 import cuchillo from '../assets/cuchillo.png'
@@ -8,54 +8,87 @@ import cono from '../assets/cono.png'
 import pelea from '../assets/pelea.png'
 import arrow from '../assets/arrow.png'
 
+
 export const Info = () => {
-  return (
-    <div>
-      <div className='desplegable-info'>
+
+    const descriptionRef = useRef()
+    const nameRef = useRef()
+
+    function goBack(){
+        const info = document.getElementById("info")
+        info.style.visibility = "collapse"
+
+        const selector = document.getElementById("selector")
+        selector.style.visibility = "visible"
+    }
+
+    function closeWindow(){
+        const info = document.getElementById("info")
+        info.style.visibility = "collapse"
+
+        const elem = document.getElementById("red_marker_container")
+        elem.style.visibility = "visible"
+    }
+
+    function confirmLocation(){
+        var description = descriptionRef.current.value
+        if (description === '') {
+            description = "Sin mayor detalle"
+        }
+        descriptionRef.current.value = ""
+
+        const detail_description = document.getElementById("detail-description")
+        detail_description.innerHTML = description
+
+        const name = nameRef.current.innerHTML
+        const detail_name = document.getElementById("situation-name")
+        detail_name.innerHTML = "Alerta " + name
         
-        <div className='global-info'>
-            <div className='back-icon'>
-                <img className='back' src={arrow} />
-            </div>
-            <div className='info-icon'>
-                <img className='imagen-info' src={cuchillo} />
-            </div>
-            
-            <div className='info-text'>
-                <div>Asalto</div>
-            </div>
-        </div>
-        <div className='barra-separadora'></div>
+        
+        closeWindow()
+        
+    }
 
-        <div className='rellenado'>
-        <div className='espaciado'></div>
-            <div className='descripcion-text'>
-                Descripción
-            </div>
-            <div className='descripcion-fill'>
-                Asaltan a un señor al frente del Negocio. Eran 3 sujetos, al parecer con un cuchillo. Se fueron hacia el norte
-            </div>
-            <div className='espaciado'></div>
-            <div className='descripcion-text'>
-                Ubicación
-            </div>
+    return (
+        <div id='info'>
+            <div className='desplegable-info'>
+                
+                <div className='global-info'>
+                    <img onClick={goBack} className='info-back-icon' src={arrow} />
+                    <h1 ref={nameRef} id='info_name' className='info-text'>Asalto</h1>
+                    <img id='info_img' className='imagen-info' src={cuchillo} />
+                    
+                </div>
+                <div className='barra-separadora'></div>
 
-            <div className='descripcion-fill'>
-                Escanilla 938
-            </div>
-            <div className='espaciado'></div>
-            <div className='espaciado'></div>
-            <div className='espaciado'></div>
-            <div className='confirmar-box'>
-                <div className='confirmar'>
-                    Confirmar
+                <div className='rellenado'>
+                    <div className='espaciado'></div>
+                    <div className='descripcion-text'>
+                        Descripción
+                    </div>
+                    <div className='description-fill-container'>
+                        <textarea ref={descriptionRef} className='description-fill' name="" placeholder='Describa la situación'></textarea>
+                    </div>
+                    <div className='espaciado'></div>
+                    <div className='descripcion-text'>
+                        Ubicación
+                    </div>
+
+                    <div className='descripcion-fill'>
+                        Vicuña Mackena 3939
+                    </div>
+                    <div className='espaciado'></div>
+                    <div className='espaciado'></div>
+                    <div className='espaciado'></div>
+                    <div className='confirmar-box'>
+                        
+                        <button onClick={confirmLocation} className='confirmar-button'>Confirmar</button>
+                    
+                    </div>
                 </div>
             </div>
         </div>
-
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Info
